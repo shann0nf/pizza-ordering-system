@@ -1,0 +1,112 @@
+/* General Body and Background */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+body {
+    background-image: url('/static/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.container {
+    flex: 1;
+    max-width: 50%; 
+    min-width: 450px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.orders-container {
+    max-width: 450px; 
+    margin: 0 auto;
+}
+
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+}
+
+
+.btn {
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white !important;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.1s ease-in-out;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+footer {
+    background-color: #222 !important; 
+    color: white !important; 
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: auto;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+footer a {
+    color: white !important;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: white !important;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{%load static%}
+
+{% block title %}Create Your Own Pizza{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1>Let's Make Pizza!</h1>
+    <p>Create your perfect pizza in just a few clicks. </p>
+    <p> Enjoy a taste of Italy by making your own pizza using our ready made base, Italian tomato sauce and a selection of your favourite tasty toppings.</p>
+
+    <img src="{% static 'pizzahome.jpg' %}" alt="Delicious Pizza" class="img-fluid my-4">
+    <p class="mt-4">Haven't created an account yet?</p>
+    <a href="/register/" class="btn btn-primary">Sign Up to Get Started</a>
+</div>
+
+
+
+
+{% endblock %}

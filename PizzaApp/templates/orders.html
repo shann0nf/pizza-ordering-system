@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h2 class="text-center mt-4">Your Orders</h2>
+    <table class="table table-striped mt-3">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Pizza</th>
+                <th>Delivery Address</th>
+                <th>Order Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for order in orders %}
+            <tr>
+                <td>{{ forloop.counter }}</td> 
+                <td>{{ order.pizza }}</td>
+                <td>{{ order.delivery_address }}</td>
+                <td>{{ order.order_date }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <div class="text-center mt-4">
+        <a href="{% url 'create_pizza' %}" class="btn btn-primary">Create a New Order</a>
+    </div>
+</div>
+{% endblock %}
