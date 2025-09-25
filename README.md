@@ -21,9 +21,3 @@ This is a full-stack web application built with Django for managing pizza orders
 - 💾 SQLite3 (or PostgreSQL)
 - 🎨 Bootstrap (optional if styled)
 - 🧪 Django Admin
-
----
-
-## 📸 Screenshots
-
-> Add screenshots here later or I can make placeholder text like:
